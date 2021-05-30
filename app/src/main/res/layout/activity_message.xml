@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MessageActivity">
+    <com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/messegesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/input"
+        app:incomingAvatarHeight="55dp"
+        app:incomingAvatarWidth="55dp"
+        app:incomingBubbleDrawable="@drawable/incoming_message_bubble"
+        app:outcomingBubbleDrawable="@drawable/outcoming_message_bubble"
+        app:outcomingTimeTextColor="#ae858585"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/gray"/>
+    <com.stfalcon.chatkit.messages.MessageInput
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:attachmentButtonBackground="?attr/selectableItemBackgroundBorderless"
+        app:attachmentButtonDefaultIconColor="#115ede"
+        app:attachmentButtonDefaultIconPressedColor="#fe6ede"
+        app:attachmentButtonHeight="28dp"
+        app:attachmentButtonWidth="28dp"
+        app:showAttachmentButton="true"
+        app:inputButtonBackground="@drawable/send_button"
+        app:inputButtonDefaultIconColor="#fe6ede"
+        app:inputButtonDefaultIconDisabledColor="#115ede"
+        app:inputHint="Type a message ..."
+        />
+</RelativeLayout>
