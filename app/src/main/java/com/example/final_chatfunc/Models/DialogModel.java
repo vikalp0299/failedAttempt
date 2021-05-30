@@ -15,7 +15,7 @@ public class DialogModel implements IDialog<MessageModel> {
    private MessageModel lastMessage;
    private int unreadCount;
 
-   public DialogModel(String id, String dialogPhoto, String dialogName, ArrayList<UserModel> users, MessageModel lastMessage, int unreadCount){
+   public DialogModel(String id, String dialogName, String dialogPhoto, ArrayList<UserModel> users, MessageModel lastMessage, int unreadCount){
        this.id=id;
        this.dialogPhoto=dialogPhoto;
        this.dialogName=dialogName;

@@ -1,10 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/search"
-        android:title="Search Bar"
-        app:showAsAction="always"
-        android:icon="@drawable/search_action"
-        app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/delete_action"
+        android:title="action_delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_copy"
+        android:icon="@drawable/copy_action"
+        android:title="action_copy"
+        app:showAsAction="always" />
+
 </menu>

@@ -11,22 +11,16 @@ import com.squareup.picasso.Picasso;
 import com.stfalcon.chatkit.commons.ImageLoader;
 import com.stfalcon.chatkit.dialogs.DialogsListAdapter;
 
-public class DialogImplementExtentionActivity extends AppCompatActivity implements DialogsListAdapter.OnDialogClickListener<DialogModel>,DialogsListAdapter.OnDialogLongClickListener<DialogModel> {
+public abstract class DialogImplementExtentionActivity extends AppCompatActivity implements DialogsListAdapter.OnDialogClickListener<DialogModel>,DialogsListAdapter.OnDialogLongClickListener<DialogModel> {
 
     protected ImageLoader imgLoader;
     protected DialogsListAdapter<DialogModel> dialogsListAdapter;
 
     @Override
-     public void onCreate(@Nullable Bundle savedInstanceState) {
+     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         imgLoader = (imageView, url, payload) -> Picasso.get().load(url).into(imageView);
-    }
-
-
-    @Override
-    public void onDialogClick(DialogModel dialog) {
-
     }
 
     @Override

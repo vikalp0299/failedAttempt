@@ -19,7 +19,7 @@ public class DialogViewHolder extends DialogsListAdapter.DialogViewHolder<Dialog
     public void onBind(DialogModel dialog){
         super.onBind(dialog);
 
-        if(dialog.getUsers().size()>1){
+        if(dialog.getUsers().size() > 1){
             onlineIndicator.setVisibility(View.GONE);
         }
         else{

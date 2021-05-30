@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.example.final_chatfunc.ActivityExtentions.MessageImplementationExtentionActivity;
 import com.example.final_chatfunc.Extentions.MessageExtention;
+import com.example.final_chatfunc.HelperFuntions.ToastMaker;
 import com.example.final_chatfunc.Holders.IncomingTextMessageHolder;
 import com.example.final_chatfunc.Holders.OutcomingImageMessageHolder;
 import com.stfalcon.chatkit.commons.models.IMessage;
@@ -50,14 +51,10 @@ public class MessageActivity extends MessageImplementationExtentionActivity impl
 
     @Override
     public void onMessageLongClick(IMessage message) {
-
+        ToastMaker.cookToast(this,"Long click Handler", false);
     }
 
 
-    @Override
-    public void onSelectionChanged(int count) {
-        
-    }
     private   void launchAdapter(){
 
         IncomingTextMessageHolder.Payload payload = new IncomingTextMessageHolder.Payload();

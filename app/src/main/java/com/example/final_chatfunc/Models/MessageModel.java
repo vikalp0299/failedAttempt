@@ -16,10 +16,10 @@ public class MessageModel implements IMessage, MessageContentType.Image{
     private UserModel user;
     private Image img;
 
-    public MessageModel(String id, String text,UserModel user){
-        this(id,text,user,new Date());
+    public MessageModel(String id,UserModel user, String text){
+        this(id,user,text,new Date());
     }
-    public MessageModel(String id, String text, UserModel user, Date createdAt){
+    public MessageModel(String id, UserModel user, String text, Date createdAt){
         this.id = id;
         this.text = text;
         this.user = user;

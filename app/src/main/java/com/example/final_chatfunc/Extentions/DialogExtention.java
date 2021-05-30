@@ -61,8 +61,8 @@ public class DialogExtention extends StorageConnector {
     private static MessageModel getMessage(final Date date){
         return new MessageModel(
                 getRandomId(),
-                getRandomMessage(),
                 getUser(),
+                getRandomMessage(),
                 date
         );
 
